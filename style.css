@@ -1,0 +1,131 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 100px;
+  background-color: rgb(187, 107, 217), 0.06;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+/* mencari semua a href yang ada di nav-links */
+
+/* in herit ambil dari parent nya nav.links */
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 16px;
+}
+
+/* Pseudo Selector hover ==> text decoration underline*/
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 24px;
+  color: #f53838;
+}
+
+.btn-border {
+  border: 1px solid #f53855;
+  background-color: transparent;
+  padding: 13px 45px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #f53855;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.btn-border:hover {
+  cursor: pointer;
+  background-color: #f53855;
+  color: white;
+}
+
+.btn-text {
+  border: 0;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16 px;
+  transition: color 250ms ease-in-out;
+}
+.btn-text:hover {
+  cursor: pointer;
+  color: #f53855;
+}
+
+.nav-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1080;
+  width: 1619;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+}
+
+.card {
+  width: 336px;
+  background-color: #ffffff;
+  border: 0.001px solid;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  background-color: #f1c50e;
+  height: 480px;
+}
+
+.card h4 {
+  font-size: 20px;
+  height: 24px;
+  margin-left: 125px;
+}
+
+.card p {
+  width: 200px;
+  font-size: 14px;
+  margin-left: 125px;
+}
+
+.card-arrow {
+  margin-left: 125px;
+  margin-bottom: 50px;
+}
